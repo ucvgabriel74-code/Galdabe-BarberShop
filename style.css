@@ -1,0 +1,315 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+.contenedor__principal{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor__header{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 2px 0 10px #0284c7;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo{
+    font-family: serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo--azul{
+    color: #0284c7;
+}
+.menu .menu__item{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 25px;
+}
+
+
+.menu a{
+    text-decoration: none;
+    font-size: 0.85rem;
+    color: #0f172ae4;
+    transition: color 0.5s;
+
+}
+
+.menu a:hover{
+    color: #0ba9f7; 
+}
+
+.seccion__inicio{
+    min-height: 100vh;
+    background-image: radial-gradient(circle at top , #0ba8f745 , #fff 80%, transparent 100%);
+    text-align: center;
+    border: 1px solid #0ba8f718 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.inicio__centrado{
+    max-width: 50%;
+}
+
+.inicio__titulo{
+    font-size: 2.8rem;
+    font-family: serif;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.titulo--azul{
+    color: #053aad;
+}
+
+.inicio__eslogan{
+    font-size: 0.9rem;
+    color: #0b1329cc;
+    text-wrap: pretty;
+}
+
+.inicio__enlace, .tarifas__enlace{
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.7rem;
+    display: inline-block;
+    background-color: #22c55e;
+    padding: 12px 30px;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #22c55e;
+    transition: background-color 0.5s;
+}
+
+.inicio__enlace:hover{
+    background-color: #0d7e36;
+}
+
+.tarifas__enlace:hover{
+    background-color: #0d7e36;
+}
+
+.seccion__tarifas{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tarifas__centrado{
+    max-width: 40%;
+    border: 1px solid #118fce2f;
+    border-top: 4px solid #0d56f6db;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0c7ab196;
+}
+
+.tarifas__subtitulo{
+    font-family: serif;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+
+.tarifa__corte{
+    font-size: 3.2rem;
+    font-family: serif;
+    margin: 10px;
+}
+
+.signo__dolar{
+    color: #0d6d9c;
+    font-size: 2rem;
+}
+
+.tarifas__parrafo{
+    margin: 1.5rem;
+    font-size: 0.85rem;
+    color: #0f172ac4;
+    line-height: 1.6;
+    text-wrap: pretty;
+
+}
+
+
+.seccion__galeria{
+    min-height: 100vh;
+    padding: 20px;
+    background-image: radial-gradient(circle at top , #0ba8f745 , #fff 80%, transparent 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid #0ba8f718 ;
+}
+
+.galeria__titulo{
+    font-family: serif;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin: 20px;
+}
+
+.contenedor__img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.galeria__img{
+    height: 320px;
+    width: 250px;
+    border-radius: 20px;
+}
+
+.img--clasico{
+    background-image: url("https://i.pinimg.com/originals/45/19/3d/45193d5224254fb30012a22207ec1e26.jpg");
+    background-size: cover;
+    transition: box-shadow 0.5s;
+}
+
+.img--clasico:hover{
+    box-shadow: 0 0 15px #053aad;
+}
+
+.img--fade{
+    background-image: url("https://i.pinimg.com/originals/b5/9a/fe/b59afeceb84db4868075dd3ce1b4f265.jpg?nii=t");
+    background-size: cover;
+    background-position: center;
+    transition: box-shadow 0.8s;
+}
+
+.img--fade:hover{
+     box-shadow: 0 0 10px #053aad;
+}
+
+.img--taper{
+    background-image: url("https://i.pinimg.com/474x/05/b3/57/05b357b6986ecc96723821f40cbbe25c.jpg");
+    background-size: cover;
+    transition: box-shadow 0.8s;
+}
+
+.img--taper:hover{
+     box-shadow: 0 0 10px #053aad;
+}
+
+
+.img--buzzcut{
+    background-image: url("https://i.pinimg.com/736x/47/ec/dc/47ecdce3fb1f4e9a1c77ef9de5693fdf.jpg?nii=t");
+    background-size: cover;
+    transition: box-shadow 0.8s;
+}
+
+.img--buzzcut:hover{
+     box-shadow: 0 0 10px #053aad;
+}
+
+.seccion__contacto{
+    background-color: #0f172a;
+    font-size: 0.8rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.contenedor__informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.footer__titulo{
+    font-family: serif;
+
+}
+
+.footer__contacto ul{
+    list-style: none;
+    text-align: left;
+    line-height: 1.5;
+    padding: 0;
+}
+
+.derechos p{
+    text-align: center;
+}
+
+/* --- RESPONSIVE PARA TABLETS (Entre 768px y 1024px) --- */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .inicio__centrado {
+        max-width: 80%; 
+    }
+
+    .tarifas__centrado {
+        max-width: 60%;
+    }
+
+    .contenedor__img {
+        gap: 25px; 
+    }
+
+    .galeria__img {
+        width: 42%; 
+    }
+}
+
+/* --- RESPONSIVE PARA MÓVILES (Menores a 768px) --- */
+@media (max-width: 768px) {
+    .menu {
+        display: none; 
+    }
+
+    .inicio__centrado {
+        max-width: 90%;
+    }
+
+    .tarifas__centrado {
+        max-width: 90%;
+        margin: 2rem auto;
+    }
+
+    .contenedor__img {
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px;
+    }
+
+    .galeria__img {
+        width: 85%; 
+        max-width: 300px;
+    }
+
+    .contenedor__informacion {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer__contacto ul {
+        text-align: center;
+    }
+}
+
